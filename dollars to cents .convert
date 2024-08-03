@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int dollar1 = scanner.nextInt();
+        int cent1 = scanner.nextInt();
+        int dollar2 = scanner.nextInt();
+        int cent2 = scanner.nextInt();
+        int totalCents = (dollar1 * 100 + cent1) + (dollar2 * 100 + cent2);
+        int totalDollars = totalCents / 100;
+        int remainingCents = totalCents % 100;
+        System.out.println(totalDollars);
+        System.out.println(remainingCents);
+    }
+}

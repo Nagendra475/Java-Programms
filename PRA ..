@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double P = scanner.nextDouble();
+        double R = scanner.nextDouble();
+        double Y = scanner.nextDouble();
+        double interest = P * (R / 100.0) * Y;
+        double amount = P + interest;
+        double discount = (2.0 / 100.0) * interest;
+        double final_settlement = amount - discount;
+
+        System.out.printf("%.2f\n", interest);
+        System.out.printf("%.2f\n", amount);
+        System.out.printf("%.2f\n", discount);
+        System.out.printf("%.2f\n", final_settlement);
+    }
+}

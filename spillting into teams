@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int friends = sc.nextInt();
+        int teams = sc.nextInt();
+        int friendsInEachTeam = friends / teams;
+        int leftOut = friends % teams;
+        System.out.println("The number of friends in each team is " + friendsInEachTeam + " and left out is " + leftOut);
+    }
+}

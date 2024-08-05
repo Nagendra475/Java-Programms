@@ -1,0 +1,13 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        float num = scanner.nextFloat();
+        int original = (int) num;
+        int roundedUp = (int) Math.ceil(num);
+        int roundedDown = (int) Math.floor(num);
+        System.out.println(original + "\n" + roundedUp + "\n" + roundedDown);
+    }
+}
+

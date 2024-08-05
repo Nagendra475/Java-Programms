@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    int Length = sc.nextInt();
+    int breadth = sc.nextInt();
+    int Area = Length * breadth;
+    int perimeter = 2 * (Length + breadth);
+    System.out.println("The required length is " + perimeter + " m");
+    System.out.println("The required area of carpet is " + Area + " sqm");
+  }
+}
